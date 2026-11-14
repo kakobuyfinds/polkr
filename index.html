@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>FSBuy spreadsheet – kategorie, rozmiary i zdjęcia QC</title>
+<meta name="description" content="FSBuy spreadsheet po polsku. Przeglądaj 10 kategorii w HipobuyFind i sprawdź, jak porównać rozmiary, zdjęcia QC oraz koszt wysyłki do Polski.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:title" content="FSBuy spreadsheet – kategorie, rozmiary i zdjęcia QC">
+<meta property="og:description" content="Przewodnik po wyszukiwaniu produktów, sprawdzaniu wymiarów i porównywaniu ofert przed zakupem.">
+<meta name="theme-color" content="#f5efe5">
+<style>
+:root{color-scheme:light;--paper:#f5efe5;--surface:#fffdf8;--ink:#211a31;--muted:#564c60;--line:#d7c9d7;--accent:#512b70;--lime:#e6f3a6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+main,footer{width:min(72rem,calc(100% - 2rem));margin:auto}
+h1,h2,h3{line-height:1.12;margin:0 0 .65em}
+h1{font-size:clamp(2.5rem,7vw,5.5rem);letter-spacing:-.06em}
+h2{font-size:clamp(1.6rem,4vw,2.65rem);letter-spacing:-.035em}
+h3{font-size:1.19rem}
+p{margin:.55rem 0 1rem;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,summary:focus-visible{outline:3px solid #8749ad;outline-offset:3px}
+.mast{padding:1.1rem 0;border-bottom:1px solid var(--line)}
+.mast a{font-weight:800}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1rem,5vw,4rem);align-items:center;padding:clamp(1.3rem,4vw,3rem) 0}
+.eyebrow{font-weight:750;color:var(--accent)}
+.hero figure{margin:0;background:#e9deed;border-radius:1.4rem;overflow:hidden}
+.hero img{aspect-ratio:4/3;object-fit:contain;background:#f4f4f4}
+img{display:block;width:100%;height:auto}
+figcaption{padding:.55rem .8rem;color:var(--muted);font-size:.88rem}
+.cta{display:inline-block;padding:.6rem 1rem;border-radius:.5rem;background:var(--ink);color:white;font-weight:750}
+.panel{padding:clamp(1rem,3vw,2rem);border:1px solid var(--line);border-radius:1.2rem;background:var(--surface);margin-bottom:1.5rem}
+.categories,.cards,.gallery{display:grid;gap:.65rem}
+.categories{grid-template-columns:repeat(auto-fit,minmax(min(10rem,100%),1fr));padding:0;margin:0;list-style:none}
+.categories a{display:block;padding:.7rem .8rem;background:#f2eaf6;border-radius:.5rem;font-weight:700}
+.categories a:hover,.categories a:focus-visible{background:var(--lime)}
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr))}
+.cards article{padding:1rem;border-top:4px solid var(--accent);background:#f9f3fa}
+.gallery{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:1rem}
+.gallery figure{margin:0;border:1px solid var(--line);border-radius:.7rem;overflow:hidden}
+.gallery img{aspect-ratio:1;object-fit:contain;background:white}
+details{border-top:1px solid var(--line);padding:.75rem 0}
+summary{font-weight:750;cursor:pointer}
+details p{margin:.6rem 0 0}
+footer{border-top:1px solid var(--line);padding:1rem 0 2rem;color:var(--muted)}
+@media(max-width:680px){
+  .hero{grid-template-columns:1fr}
+  .hero figure{max-width:25rem}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "name":"FSBuy spreadsheet – pytania i odpowiedzi",
+  "inLanguage":"pl",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Co to jest FSBuy spreadsheet?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"To określenie listy produktów z odnośnikami, którą można przeglądać według kategorii. Ten poradnik kieruje do katalogu HipobuyFind."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Co pokazują zdjęcia QC?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Zdjęcia QC pokazują stan i widoczne szczegóły sfotografowanego egzemplarza. Same zdjęcia nie potwierdzają autentyczności produktu."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Jak sprawdzić rozmiar przed zamówieniem?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Porównaj wymiary produktu w centymetrach z dobrze dopasowaną parą butów lub ubraniem. Sprawdź, co sprzedawca zmierzył i czy wymiary dotyczą wybranego wariantu."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"Jak oszacować koszt dostawy do Polski?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Wybierz Polskę jako kraj dostawy, sprawdź wycenę dla przewidywanej wagi i wymiarów paczki, a potem dolicz cenę produktu oraz pozostałe opłaty właściwe dla zamówienia."
+      }
+    }
+  ]
+}
+</script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/polkr/">
+</head>
+<body>
+<main>
+  <header class="mast"><a href="https://www.hipobuyfind.com">HipobuyFind</a></header>
+
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <p class="eyebrow">Poradnik zakupowy po polsku</p>
+      <h1 id="title">FSBuy spreadsheet</h1>
+      <p>Wybierz kategorię, zapisz link do konkretnego wariantu i porównaj wymiary, zdjęcia oraz koszt dostawy. Poniżej znajdziesz katalog HipobuyFind i wskazówki, które ułatwią ocenę ofert.</p>
+      <a class="cta" href="https://www.hipobuyfind.com">Otwórz katalog HipobuyFind</a>
+    </div>
+    <figure>
+      <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/34dc620c-8c7b-42b5-bd3c-0c6c42c6ff2b/W%2BAIR%2BFORCE%2B1%2B%2707%2BNEXT%2BNATURE.png" width="592" height="444" alt="Biały niski but Nike Air Force 1 widziany z boku" fetchpriority="high" loading="eager">
+      <figcaption>Nike Air Force 1. Zdjęcie referencyjne.</figcaption>
+    </figure>
+  </section>
+
+  <nav class="panel" aria-labelledby="categories-title">
+    <h2 id="categories-title">Kategorie produktów</h2>
+    <ul class="categories">
+      <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Buty</a></li>
+      <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+      <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirty</a></li>
+      <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Kurtki</a></li>
+      <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+      <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Nakrycia głowy</a></li>
+      <li><a href="https://hipobuyfind.com/category-917-Sets.html">Komplety</a></li>
+      <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+      <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Koszulki sportowe</a></li>
+      <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Akcesoria</a></li>
+    </ul>
+  </nav>
+
+  <section class="panel" aria-labelledby="guides-title">
+    <h2 id="guides-title">Jak porównywać oferty</h2>
+    <div class="cards">
+      <article>
+        <h3>FSBuy finds i linki do produktów</h3>
+        <p>Zapisz link do oferty, nazwę sprzedawcy i wybrany kolor. Przy porównywaniu ofert z Weidian, Taobao lub 1688 sprawdź, czy cena dotyczy konkretnego wariantu i czy oferta nadal jest dostępna.</p>
+        <p>Przy kompletach potwierdź, co obejmuje zestaw. Przy koszulkach sportowych sprawdź tył i sposób wykonania nadruku, a przy bieliźnie zasady zwrotu przed zakupem.</p>
+      </article>
+      <article>
+        <h3>Tabela rozmiarów i zdjęcia QC</h3>
+        <p>Porównaj długość wkładki w cm, szerokość bluzy pod pachami lub obwód pasa spodni. Przy kurtce uwzględnij grubość warstwy, którą zamierzasz nosić pod spodem.</p>
+        <p>Na zdjęciach kontroli jakości sprawdź szwy, metkę, profil podeszwy i zapięcie. Jeśli detal jest nieczytelny, poproś o zbliżenie przed akceptacją wysyłki.</p>
+      </article>
+      <article>
+        <h3>Koszt wysyłki do Polski</h3>
+        <p>Porównaj całkowity koszt zamówienia w PLN. Uwzględnij cenę produktu, przesyłkę krajową u sprzedawcy, przeliczenie CNY na PLN, koszt dostawy międzynarodowej i opłaty wskazane dla zamówienia.</p>
+        <p>Przy ocenie wyceny porównaj wagę rzeczywistą i wymiarową paczki zgodnie z zasadami wybranej linii. Zachowaj kalkulację i warunki zwrotu razem z linkiem do oferty.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="photos-title">
+    <h2 id="photos-title">Detale, które warto obejrzeć</h2>
+    <p>Zdjęcia referencyjne pokazują, na które elementy zwrócić uwagę w zdjęciach konkretnej oferty.</p>
+    <div class="gallery">
+      <figure>
+        <img src="https://eu.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-scarf-zip-up-hoodie--FTST90ZHP900_PM2_Front%20view.png?hei=360&amp;wid=360" width="360" height="360" alt="Czarna bluza Louis Vuitton z zamkiem i wzorzystą apaszką przy kapturze" loading="lazy" decoding="async">
+        <figcaption>Louis Vuitton · zamek i wykończenie kaptura</figcaption>
+      </figure>
+      <figure>
+        <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" alt="Beżowo-brązowa czapka Gucci z daszkiem i wzorem GG" loading="lazy" decoding="async">
+        <figcaption>Gucci · kształt daszka i szwy</figcaption>
+      </figure>
+      <figure>
+        <img src="https://www.luxe-em.com/cdn/shop/files/001_3e78aa64-04f3-4ec6-81eb-e3aad7cdb5bc.jpg?v=1759779439&amp;width=400" width="400" height="400" alt="Wzorzysta jedwabna apaszka Hermès Carré 90" loading="lazy" decoding="async">
+        <figcaption>Hermès · obszycie i nadruk</figcaption>
+      </figure>
+      <figure>
+        <img src="https://assets.christiandior.com/is/image/diorprod/JGEM95054_E01?%24default_GH%24=&amp;crop=286%2C879%2C1428%2C243&amp;extend=0%2C0%2C0%2C250&amp;hei=400&amp;scale=0.875&amp;wid=370" width="370" height="400" alt="Bransoletka GEM DIOR z żółtego złota" loading="lazy" decoding="async">
+        <figcaption>Dior · segmenty i wykończenie metalu</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="panel" aria-labelledby="search-title">
+    <h2 id="search-title">Doprecyzuj wyszukiwanie</h2>
+    <p>Jeśli szukasz konkretnego produktu, zacznij od nazwy modelu, a potem dodaj jedną cechę. Przy porównywaniu dwóch ofert przydają się też zapytania o wymiary, zdjęcia i dostawę.</p>
+    <ul>
+      <li><strong>Buty:</strong> sneakersy z niską cholewką, buty sportowe z siateczką, czarne buty z grubą podeszwą, długość wkładki w centymetrach, zdjęcie podeszwy buta z magazynu.</li>
+      <li><strong>Ubrania:</strong> bluza oversize z zamkiem, bawełniany T-shirt bez nadruku, kurtka z regulowanym dołem, szerokość bluzy pod pachami, długość nogawki od kroku.</li>
+      <li><strong>Akcesoria:</strong> czapka z regulacją obwodu, sztywna czapka z daszkiem, jedwabna apaszka kwadratowa, bransoletka z zapięciem, zdjęcie metki i obszycia apaszki.</li>
+      <li><strong>Weryfikacja oferty:</strong> link do produktu na Weidian, tabela rozmiarów konkretnego wariantu, zdjęcia QC wybranego koloru, porównanie dwóch ofert z Taobao, zasady zwrotu przed wysyłką.</li>
+      <li><strong>Dostawa:</strong> wycena paczki do Polski, przeliczenie ceny z CNY na PLN, waga wymiarowa paczki z butami, koszt dostawy kilku produktów w jednej paczce, całkowity koszt zamówienia z Chin.</li>
+    </ul>
+  </section>
+
+  <section class="panel" aria-labelledby="faq-title">
+    <h2 id="faq-title">Najczęstsze pytania</h2>
+    <details open>
+      <summary>Co to jest FSBuy spreadsheet?</summary>
+      <p>To określenie listy produktów z odnośnikami, którą można przeglądać według kategorii. Ten poradnik kieruje do katalogu HipobuyFind.</p>
+    </details>
+    <details>
+      <summary>Co pokazują zdjęcia QC?</summary>
+      <p>Zdjęcia QC pokazują stan i widoczne szczegóły sfotografowanego egzemplarza. Same zdjęcia nie potwierdzają autentyczności produktu.</p>
+    </details>
+    <details>
+      <summary>Jak sprawdzić rozmiar przed zamówieniem?</summary>
+      <p>Porównaj wymiary produktu w centymetrach z dobrze dopasowaną parą butów lub ubraniem. Sprawdź, co sprzedawca zmierzył i czy wymiary dotyczą wybranego wariantu.</p>
+    </details>
+    <details>
+      <summary>Jak oszacować koszt dostawy do Polski?</summary>
+      <p>Wybierz Polskę jako kraj dostawy, sprawdź wycenę dla przewidywanej wagi i wymiarów paczki, a potem dolicz cenę produktu oraz pozostałe opłaty właściwe dla zamówienia.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <p>Niezależny poradnik zakupowy. Zdjęcia marek mają charakter ilustracyjny. <a href="https://www.hipobuyfind.com">Przejdź do HipobuyFind</a>.</p>
+</footer>
+</body>
+</html>
